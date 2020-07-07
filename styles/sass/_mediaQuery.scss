@@ -1,4 +1,8 @@
-@media (max-width: 1199px){
+@import "variables";
+@import "mixin";
+
+//Desktop Version
+@media (max-width: 1200px){
     .section {
       padding-right: 4rem;
       padding-left: 4rem;
@@ -7,67 +11,16 @@
       padding-right: 4rem;
       padding-left: 4rem;
     }
-    .scroll-button{
-        display: block;
-    }
-    .menu-toggler.open{
-        left: 105px;
-    }
-    .menu-toggler{
-        display: block;
-        position: fixed;
-        top: 25px;
-        left: 15px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-    .menu-toggler span{
-        display: block;
-        width: 40px;
-        height: 40px;
-        margin: auto;
-        text-align: center;
-        border-radius: 10px;
-        line-height: 44px;
-        font-size: 22px;
-    }
- 
+
     .blog-image::before {
         height: 24%;
     }
-    .hero-05 .hero-slide {
-      background-size: auto 100%;
-    }
-    .hero-05 .hero-slide.zoom {
-      background-size: auto 200%;
-    }
- 
-    .color-switcher .pallet-button.hide{
-        right: -60px;
-    }
-    .color-switcher .color-pallet.hide{
-        right: -195px;
-    }
-	.modal-dialog {
-		max-width: 100%;
-  }
-  .services-content h5 {
-    font-size: 16px;
-  }
-
 }
 
-// desktop to tablet
+// Desktio to tablet 
 @media (max-width: 990px) {
-
-  .arshia-dark .navbar-toggler span{
-    color: #fafafa;
-  }
   .navbar-toggler span{
     color: #1a1a1a;
-  }
-  .skill-box {
-    margin-top: 60px;
   }
   .hero-03 .hero-item{
     text-align: center;
@@ -88,10 +41,13 @@
   .hero-03 .hero-content {
     overflow-x: hidden;
   }
+  .arshia-dark .navbar-toggler span{
+    color: #fafafa;
+}
 
 }
 
-// tablet version
+// Tablet Version
 @media (max-width: 767px){
     .social-box{
         display: none;
@@ -106,16 +62,13 @@
     
 }
 
-// tablet to mobile
+// Tablet to mobile
 @media (max-width: 575px){
     .hero-02 .hero-content{
       padding-left: 2rem;
     }
     .about .personal-info span {
         display: block;
-    }
-    .language-bar .list-inline-item:not(:last-child) {
-        margin-right: .25rem;
     }
     #message.toast {
         top: 18px;
@@ -126,10 +79,11 @@
 
 }
 
-// mobile version
+// Mobile 
 @media (max-width: 380px){
     #message.toast {
         top: 60px;
         left: 15px;
     }
 }
+
