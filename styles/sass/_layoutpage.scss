@@ -34,7 +34,7 @@
     z-index: 10;
     position: relative;
     width: 450px;
-    height: auto;
+    height: 500px;
     box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
   }
   
@@ -59,11 +59,15 @@
 
 // tool kit 
 .services .services-item {
-    padding: 30px 10px;
+    padding: 10px;
     margin-top: 30px;
     background-color: #FFD4CA;
     border-radius: 10px;
     box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
+        i {
+            display: inline-block;
+            font-size: 2rem;
+        }
   }
   
   .services .services-item:hover {
@@ -83,6 +87,11 @@
         li a {
             padding:5px 15px;
         }
+    .flex-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .portfolio-item {
         margin-top:30px;
 
@@ -139,7 +148,12 @@
     .portfolio-item-content img{
         width: 600px;
         height: 452px;
-    } 
+    }
+    .image-border, 
+    .project-content {
+        width: 50%;
+        margin: 0 10px;
+    }
 }
 
 // blog post

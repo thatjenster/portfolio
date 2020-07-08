@@ -444,7 +444,7 @@ a, button {
   z-index: 10;
   position: relative;
   width: 450px;
-  height: auto;
+  height: 500px;
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
@@ -468,12 +468,17 @@ a, button {
 }
 
 .services .services-item {
-  padding: 30px 10px;
+  padding: 10px;
   margin-top: 30px;
   background-color: #FFD4CA;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
           box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
+}
+
+.services .services-item i {
+  display: inline-block;
+  font-size: 2rem;
 }
 
 .services .services-item:hover {
@@ -493,6 +498,17 @@ a, button {
 
 .portfolio li a {
   padding: 5px 15px;
+}
+
+.portfolio .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio .portfolio-item {
@@ -567,6 +583,12 @@ a, button {
 .portfolio .portfolio-item-content img {
   width: 600px;
   height: 452px;
+}
+
+.portfolio .image-border,
+.portfolio .project-content {
+  width: 50%;
+  margin: 0 10px;
 }
 
 .blog .blog-item {
@@ -810,6 +832,21 @@ a, button {
     left: inherit;
     font-size: 12px;
     padding: 3px 0;
+  }
+  .flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .image-border {
+    width: 100%;
+  }
+  .image-border {
+    margin: 0 10px;
   }
 }
 

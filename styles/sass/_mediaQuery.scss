@@ -64,26 +64,36 @@
 
 // Tablet to mobile
 @media (max-width: 575px){
-    .hero-02 .hero-content{
-      padding-left: 2rem;
+  .hero-02 .hero-content{
+    padding-left: 2rem;
+  }
+  .about .personal-info span {
+      display: block;
+  }
+  #message.toast {
+      top: 18px;
+      left: inherit;
+      font-size: 12px;
+      padding: 3px 0;
     }
-    .about .personal-info span {
-        display: block;
-    }
-    #message.toast {
-        top: 18px;
-        left: inherit;
-        font-size: 12px;
-        padding: 3px 0;
-      }
+  .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .image-border {
+    width: 100%;
+  }
+  .image-border {
+    margin: 0 10px;
+  }
 
 }
 
 // Mobile 
 @media (max-width: 380px){
-    #message.toast {
-        top: 60px;
-        left: 15px;
-    }
+  #message.toast {
+      top: 60px;
+      left: 15px;
+  }
 }
 
