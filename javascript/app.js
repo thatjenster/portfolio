@@ -6,6 +6,8 @@ $(document).ready(function () {
     colorScheme();
     borderColor();
     smoothScroll();
+    AOS.init();
+
 
 });
 
@@ -50,19 +52,6 @@ function headerSticky(){
     }
 }
 
-// change color on the nav menu when clicked on 
-function ChangeColor(){
-    let top1 = $('#hero').offset().top;
-    let top2 = $('#about').offset().top;
-
-    if ($window.scrollTop() == top1) {
-        $('.special-section').css('color', '#fff');
-      } else {
-        $('.special-section').css('color', '#1a1a1a');
-      } 
-    
-}
-
 function borderColor() {
     let allDivs = document.getElementsByClassName('timeline-border');
 
@@ -72,14 +61,6 @@ function borderColor() {
         allDivs[i].style.borderLeftColor = "" + color + "";
     }
 }
-
-// Functions
-$(".to-contact").on('click', function(){
-    $("main > section.active, #menu > li a").removeClass("active");
-    $('#menu > li:last-child a').addClass('active');
-    let $id=$(this).attr('href');
-    $('#main').children($id).addClass('active');
-})
 
 // Form to submit to my email 
 function validateEmail(email) {

@@ -12,30 +12,31 @@
 		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/sass/styles.css">
         <script src="https://use.fontawesome.com/430a1f2223.js"></script>
     </head>
     <body data-spy="scroll" data-target="#scrollspy" data-offset="70" class="flat-demo">
 
-    <!--  Pre Loader  -->
+    <!--  Loading Bar  -->
     <div id="overlayer"></div>
     <span class="loader"></span>
 
     <!--    Header Start    -->
-    <header id="header" class="header fixed-top">
-        <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+    <header id="header" class="header fixed-top header-sticky">
+        <nav id="scrollspy" class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand font-weight-bold" href="#hero">that<span class="base-color">jenster</span></a>
-                <!--  Navbar Toggler Button Start -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#hero">that<span class="base-color">jenster</span></a>
+                <!--  Toggle Menu  -->
+                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
-                <!--  Navbar Toggler Button End -->
+                <!-- Toggle Menu ends here -->
                 <div class="collapse navbar-collapse" id="toggle-menu">
-                    <ul class="navbar-nav nav-pills ml-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#hero">Home</a>
+                            <a class="nav-link" href="#hero">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -53,7 +54,7 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <ul class="list-inline socails mt-4  d-lg-none">
+                    <ul class="list-inline mt-4 d-lg-none">
                         <li class="list-inline-item"><a href="https://www.instagram.com/jennyt.dinh/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         <li class="list-inline-item"><a href="https://twitter.com/thatjenster"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li class="list-inline-item"><a href="https://github.com/that-jenster"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -64,7 +65,7 @@
         </nav>
     </header>
     
-     <!-- Social -->
+     <!-- Social Follow me-->
      <div class="social-box">
         <div class="follow-label">
             <span>Follow Me</span>
@@ -78,7 +79,8 @@
     </div>
 
     <!--  Hero Start  -->
-    <section id="hero" class="hero hero-03 full-screen p-0">
+    <section id="hero" class="hero hero-03 full-screen">
+        <div class="sakura"></div>
         <div class="hero-content">
             <div class="container">
                 <div class="row align-items-center">
@@ -93,18 +95,17 @@
                             </div>
                         </div>
                     </div>
-                
+        
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="hero-section">
-                            <div class="personal-image rounded-circle">
-                                <img src="./assets/image/heropicture.JPG" alt="a headshot photo of me" class="rounded-circle img-fluid">
+                            <div class="personal-image">
+                                <img src="./assets/image/P1333169.JPG" alt="a headshot photo of me" class="img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section>
     <!--  Hero End  -->
 
@@ -246,117 +247,111 @@
                 <div class="col-lg-12">
                     <div class="title-content mb-4">
                         <p class="mb-0">Enjoy viewing my projects!</p>
-                        <h2 class="base-color">My Proud Projects</h2>
+                        <h2 class="base-color">My Projects</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-items row">
+            <div class="portfolio-items column">
                 <!-- Item 01 -->
-                <div class="portfolio-item flex-wrapper">
-                    <div class="image-border">
-                        <div class="portfolio-item-content">
-                            <img src="./assets/image/project3-final.gif" alt="project3 landing page: Sweat App" class="img-fluid">
-                            <div class="img-overlay text-center">
-                                <div class="img-overlay-content">
-                                    <div class="portfolio-icon">
-                                        <a href="https://github.com/that-jenster/jenny-dinh-project-three">
-                                            <i class="fa fa-github"></i>
-                                        </a>
-                                        <a href="https://that-jenster.github.io/jenny-dinh-project-three/">
-                                            LIVE
-                                        </a>
-                                    </div>
-                                    <h5 class="mt-3 mb-0">My Work</h5>
+                <div class="portfolio__1">
+                    <div class="wrapper">
+                        <div class="project-info aos-init aos-animate" data-aos="fade-up" data-aos-duration="1800">
+                            <h4 class="portfolio__h4">Sweat</h4>
+                            <h5>
+                                Javascript
+                                <span class="base-color"> | </span>
+                                Jquery
+                                <span class="base-color"> | </span>
+                                Sass 
+                                <span class="base-color"> | </span>
+                                HTML5
+                            </h5>
+                            <div>
+                                <p>Create your own Workout playlist and see if you can complete the amount of reps you've chosen in 5 minutes! Use my app to have a fun, healthy and active workout!</p>
+                            </div>
+                            <div class="link-container">
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://that-jenster.github.io/jenny-dinh-project-three/" target="_blank">LIVE</a>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://github.com/that-jenster/jenny-dinh-project-three" target="_blank">GITHUB</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h5>
-                            Javascript
-                            <span class="base-color"> | </span>
-                            Jquery
-                            <span class="base-color"> | </span>
-                            Sass 
-                            <span class="base-color"> | </span>
-                            HTML5
-                        </h5>
-                        <p>Create your own Workout playlist and see if you can complete the amount of reps you've chosen in 5 minutes! Use my app to have a fun, healthy and active workout!</p>
+                        <div class="media-container">
+                            <img class="image aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250" src="./assets/image/project3-final.gif" alt="gif - demonstrating project 3">
+                        </div>
                     </div>
                 </div>
                 <!-- Item 02 -->
-                <div class="portfolio-item flex-wrapper">
-                    <div class="image-border">
-                        <div class="portfolio-item-content">
-                            <img src="./assets/image/project4.gif" alt="project 4 landing page: Travel Trivia" class="img-fluid">
-                            <div class="img-overlay text-center">
-                                <div class="img-overlay-content">
-                                    <div class="portfolio-icon">
-                                        <a href="https://github.com/Jenny-Dinh/projectFourTravelTrivia">
-                                            <i class="fa fa-github"></i>
-                                        </a>
-                                        <a href="https://jenny-dinh.github.io/projectFourTravelTrivia/">
-                                            LIVE
-                                        </a>
-                                    </div>
-                                    <h5 class="mt-3 mb-0">My Work</h5>
+                <div class="portfolio__2">
+                    <div class="wrapper">
+                        <div class="project-info aos-init aos-animate" data-aos="fade-up" data-aos-duration="1800">
+                            <h4 class="portfolio__h4">Travel Escape</h4>
+                            <h5>
+                                Paired Programming
+                                <span class="base-color"> | </span>
+                                REST APIs
+                                <span class="base-color"> | </span>
+                                Javascript
+                                <span class="base-color"> | </span>
+                                Jquery
+                                <span class="base-color"> | </span>
+                                Sass 
+                                <span class="base-color"> | </span>
+                                HTML5
+                            </h5>
+                            <div>
+                                <p>Create your own Workout playlist and see if you can complete the amount of reps you've chosen in 5 minutes! Use my app to have a fun, healthy and active workout!</p>
+                            </div>
+                            <div class="link-container">
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://jenny-dinh.github.io/projectFourTravelTrivia/" target="_blank">LIVE</a>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://github.com/Jenny-Dinh/projectFourTravelTrivia" target="_blank">GITHUB</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h5>
-                            Paired Programming
-                            <span class="base-color"> | </span>
-                            REST APIs
-                            <span class="base-color"> | </span>
-                            Javascript
-                            <span class="base-color"> | </span>
-                            Jquery
-                            <span class="base-color"> | </span>
-                            Sass 
-                            <span class="base-color"> | </span>
-                            HTML5
-                        </h5>
-                        <p>Do you think you can make it to the end of this quiz? Answer 10 super challenging questions on any level regarding Geography. If you complete the game, there might be a little surprise at the end hehe</p>
+                        <div class="media-container">
+                            <img class="image aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250" src="./assets/image/project4.gif" alt="gif - demonstrating project 4">
+                        </div>
                     </div>
                 </div>
                 <!-- Item 03 -->
-                <div class="portfolio-item flex-wrapper">
-                    <div class="image-border">
-                        <div class="portfolio-item-content">
-                            <img src="./assets/image/project5.gif" alt="project 5 landing page: Travel Memories" class="img-fluid">
-                            <div class="img-overlay text-center">
-                                <div class="img-overlay-content">
-                                    <div class="portfolio-icon">
-                                        <a href="https://github.com/that-jenster/projectFiveSoloReact">
-                                            <i class="fa fa-github"></i>
-                                        </a>
-                                        <a href="https://that-jenster.github.io/projectFiveSoloReact/">
-                                            LIVE
-                                        </a>
-                                    </div>
-                                    <h5 class="mt-3 mb-0">My Work</h5>
+                <div class="portfolio__3">
+                    <div class="wrapper">
+                        <div class="project-info aos-init aos-animate" data-aos="fade-up" data-aos-duration="1800">
+                            <h4 class="portfolio__h4">Travel Memories</h4>
+                            <h5>
+                                Google API
+                                <span class="base-color"> | </span>
+                                Javascript
+                                <span class="base-color"> | </span>
+                                React
+                                <span class="base-color"> | </span>
+                                Firebase
+                                <span class="base-color"> | </span>
+                                SASS 
+                                <span class="base-color"> | </span>
+                                HTML5
+                            </h5>
+                            <div>
+                                <p>Create your own Workout playlist and see if you can complete the amount of reps you've chosen in 5 minutes! Use my app to have a fun, healthy and active workout!</p>
+                            </div>
+                            <div class="link-container">
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://that-jenster.github.io/projectFiveSoloReact/" target="_blank">LIVE</a>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                <a class="pill-button" href="https://github.com/that-jenster/projectFiveSoloReact" target="_blank">GITHUB</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h5>
-                            Google APIs
-                            <span class="base-color"> | </span>
-                            Javascript
-                            <span class="base-color"> | </span>
-                            React
-                            <span class="base-color"> | </span>
-                            Firebase
-                            <span class="base-color"> | </span>
-                            Sass 
-                            <span class="base-color"> | </span>
-                            HTML5
-                        </h5>
-                        <p>A little Travel Diary to keep in your pocket. Plot on the map where you've been and write a favorite memory about it. Super cool way to see your map GROW.</p>
+                        <div class="media-container">
+                            <img class="image aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250" src="./assets/image/project5.gif" alt="gif - demonstrating project 5">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -391,7 +386,7 @@
                             </ul>
                             <h6 class="mb-3"> I ain't great, but I got g(r)it.</h6>
                             <p class="text-dark">How I overcome self-doubt as a Developer.</p>
-                            <div class="blog-link">
+                            <div>
                                 <a class="base-color" href="https://thatjenster.wordpress.com/2020/06/29/i-aint-great-but-i-got-grit-how-i-overcome-selfdoubt-as-a-developer/" target="_blank">Read More...</a>
                             </div>
                         </div>
@@ -414,7 +409,7 @@
                             </ul>
                             <h6 class="mb-3">How Kaizen is making me a better Developer</h6>
                             <p class="text-dark">The idea of achieving small, maybe sometimes unnoticeable wins, to achieving a larger win in the long-term.</p>
-                            <div class="blog-link">
+                            <div>
                                 <a class="base-color" targer="_blank" href="https://thatjenster.wordpress.com/2020/05/31/how-kaizen-is-making-me-a-better-developer/">Read More...</a>
                             </div>
                         </div>
@@ -437,7 +432,7 @@
                             </ul>
                             <h6 class="mb-3">Coding</h6>
                             <p class="text-dark">The invisible Superpower.</p>
-                            <div class="blog-link">
+                            <div>
                                 <a class="base-color" href="https://thatjenster.wordpress.com/2020/05/19/coding-the-invisible-superpower-in-an-evolving-world/" target="_blank">Read More...</a>
                             </div>
                         </div>
@@ -513,10 +508,11 @@
 
     <!--  Jquery  and Javascript  -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
-    <script src="./javascript/bootstrap.js"></script>
     <script src="./javascript/app.js"></script>
 
     <!-- imported script for transitioning and bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.0/jquery.easing.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>

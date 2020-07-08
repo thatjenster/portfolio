@@ -32,18 +32,13 @@
   .hero-03 .personal-image{
     text-align: center;
   }
-  .hero-03 .hero-image img{
-    width: 45%;
-  }
-  .hero-03 .square{
-    display: none;
-  }
+
   .hero-03 .hero-content {
     overflow-x: hidden;
   }
   .arshia-dark .navbar-toggler span{
     color: #fafafa;
-}
+  }
 
 }
 
@@ -56,8 +51,9 @@
       padding-right: .5rem;
       padding-left: .5rem;
     }
-    .hero-03 .hero-image img{
-      width: 60%;
+    .hero-03 .personal-image img{
+      width: 390px;
+      height: 390px;
     }
     
 }

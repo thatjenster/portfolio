@@ -5,43 +5,53 @@
 .hero{
     overflow-x: hidden !important;
   }
-  .hero .personal-item h1 {
-    font-size: 2rem !important;
-  }
+.sakura {
+content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png'), url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png');
+    animation: sakura 15s linear infinite;
+}
+@keyframes sakura {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
   
-  .hero .hero-content {
+.hero .hero-content {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     z-index: 2;
     right: 0;
-  }
+}
   
-  .hero .hero-content p {
-    max-width: 500px;
-  }
+.hero .hero-content p {
+    max-width: 400px;
+}
 
 .hero-03 {
     overflow-x: hidden !important;
-  }
+    p {
+        max-width: 450px;
+    }
+}
   
-  .hero-03 p {
-    max-width: 450px;
-  }
-  
-  .hero-03 .personal-image img {
+.hero-03 .personal-image img {
     z-index: 10;
     position: relative;
     width: 450px;
-    height: 500px;
+    height: 450px;
+    border-radius: 50%;
     box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-  }
-  
-  .hero-03 .hero-image img {
-    z-index: 10;
-    position: relative;
-  }
+}
 
   // about section - personal information
 .about .personal-info{
@@ -72,7 +82,7 @@
   
   .services .services-item:hover {
     transform: rotateY(360deg);
-    transition: 0.9s ease;
+    transition: 2s ease;
   }
   
   .services .services-content {
@@ -80,80 +90,22 @@
   }
 
 // project section 
-.portfolio{
-        .list-inline-item:not(:last-child) {
-            margin-bottom: 1rem;
-        }
-        li a {
-            padding:5px 15px;
-        }
-    .flex-wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .portfolio-item {
-        margin-top:30px;
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px auto;
+}
 
-        &-content{
-            position:relative;
-            border-radius: $second-border-radius;
-
-            &::before{
-                content:"";
-                position:absolute;
-                top:15px;
-                right:15px;
-                bottom:15px;
-                left:15px;
-                opacity:0;
-                transform:scale(0.8);
-                transition:.5s all ease;
-                border-radius:1.25rem;
-            }
-            &:hover{
-                .img-overlay-content {
-                    opacity:1;
-                }
-                &::before {
-                    transform:scale(1);
-                    opacity:1;
-                }
-            } 
-        }
-    }
-    .img-overlay-content {
-        position:absolute;
-        width:100%;
-        top:50%;
-        transform:translateY(-50%);
-        text-align:center;
-        opacity:0;
-        transition:all .5s ease;
-        h5{
-            color: #fff;
-        }
-    }
-    .portfolio-icon{
-        a{
-            @include portfolio-icon-content; 
-            line-height:37px;
-            width: 50px;
-
-            i{
-                @include portfolio-i-content;
-            }
-        }   
-    } 
-    .portfolio-item-content img{
-        width: 600px;
-        height: 452px;
-    }
-    .image-border, 
-    .project-content {
-        width: 50%;
-        margin: 0 10px;
-    }
+.project-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 20px;
 }
 
 // blog post
@@ -162,7 +114,6 @@
         margin: 30px 0;
     }
     .blog-content{
-        // padding: 0 30px 30px;
         padding: 24px 16px;
     }
     .blog-content .list-inline-item:not(:last-child) {
