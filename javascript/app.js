@@ -61,6 +61,7 @@ function borderColor() {
 
 // Form to submit to my email 
 function validateEmail(email) {
+    "use strict";
     let re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
