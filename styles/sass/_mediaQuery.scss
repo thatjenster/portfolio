@@ -47,7 +47,11 @@
     .image {
     margin: 0 auto;
     }
-}
+  }
+  .flex-wrap-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 }
 
@@ -93,6 +97,10 @@
   #message.toast {
       top: 60px;
       left: 15px;
+  }
+  .flex-wrap-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
