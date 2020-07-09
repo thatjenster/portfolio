@@ -409,26 +409,12 @@ a, button {
   }
 }
 
-.hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 2;
-  right: 0;
-}
-
-.hero .hero-content p {
-  max-width: 400px;
-}
-
 .hero-03 {
   overflow-x: hidden !important;
 }
 
-.hero-03 p {
-  max-width: 450px;
+.wrapper-flex {
+  margin: 100px auto 0 auto;
 }
 
 .hero-03 .personal-image img {
@@ -469,8 +455,8 @@ a, button {
 .services .services-item:hover {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
+  -webkit-transition: 4s ease;
+  transition: 4s ease;
 }
 
 .services .services-content {
@@ -717,6 +703,10 @@ a, button {
   }
   .arshia-dark .navbar-toggler span {
     color: #fafafa;
+  }
+  .hero .hero-content {
+    width: 100%;
+    height: auto;
   }
   .wrapper {
     display: -webkit-box;

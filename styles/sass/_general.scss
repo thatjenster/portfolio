@@ -8,7 +8,7 @@ body{
     background-color: map-get($map: $bg-colors, $key: bg-light);
 }
 .full-screen {
-    height:100vh;
+    height: 100vh;
 }
 main#main {
     @include full-wh;
