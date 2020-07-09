@@ -610,10 +610,6 @@ a, button {
   color: #fafafa;
 }
 
-.arshia-dark .color-switcher h6 {
-  color: #1a1a1a;
-}
-
 .arshia-dark .header nav a, .arshia-dark .follow-label {
   color: #fafafa !important;
 }
@@ -632,7 +628,7 @@ a, button {
           box-shadow: none;
 }
 
-.arshia-dark .text-dark, .arshia-dark .hero-content, .arshia-dark .hero-social li a, .arshia-dark .social a, .arshia-dark .blog-single .modal-content {
+.arshia-dark .text-dark, .arshia-dark .hero-content, .arshia-dark .hero-social li a, .arshia-dark .social a {
   color: #fafafa !important;
 }
 
