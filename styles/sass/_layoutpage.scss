@@ -86,7 +86,7 @@ content: '';
 }
 
 .project-info {
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,9 +103,10 @@ content: '';
 .media-container {
     padding: 30px;
     background-color: white;
-    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
-    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 2px 3px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+    border: 15px solid #ecbcfd;
 }
 
 // blog post
@@ -240,9 +241,6 @@ content: '';
         box-shadow: $dark-box-shadow-inset;
     }
 
-    .blog-intro {
-        box-shadow: $third-dark-box-shadow-inset;
-    }
     .contact .form-item .form-group{
         background-color:  map-get($map: $bg-colors, $key: bg-dark);
         box-shadow: $dark-box-shadow-inset;
