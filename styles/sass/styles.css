@@ -434,8 +434,6 @@ a, button {
 .hero-03 .personal-image img {
   z-index: 10;
   position: relative;
-  width: 450px;
-  height: 450px;
   border-radius: 50%;
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
@@ -745,10 +743,6 @@ a, button {
   .section {
     padding-right: .5rem;
     padding-left: .5rem;
-  }
-  .hero-03 .personal-image img {
-    width: 390px;
-    height: 390px;
   }
 }
 
