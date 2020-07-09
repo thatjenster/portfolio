@@ -7,8 +7,6 @@ $(document).ready(function () {
     borderColor();
     smoothScroll();
     AOS.init();
-
-
 });
 
 $window.on("load", (function() {
@@ -20,7 +18,6 @@ $window.on('scroll', function () {
     headerSticky();
     skills();
     ChangeColor();
-    
 });
 
 // Changing from light mode to dark mode
