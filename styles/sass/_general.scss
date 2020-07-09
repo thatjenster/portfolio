@@ -6,9 +6,15 @@ body{
     font-family: $muli;
     font-weight: $font-weight-light;
     background-color: map-get($map: $bg-colors, $key: bg-light);
+    overflow-x: hidden;
 }
 .full-screen {
     height: 100vh;
+}
+.max-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 main#main {
     @include full-wh;
@@ -31,6 +37,7 @@ main#main {
     -webkit-transition: opacity 0s ease .6s,-webkit-transform .6s ease .6s;
     transition: transform .6s ease .6s,opacity 0s ease .6s,-webkit-transform .6s ease .6s;
     padding-left: 80px;
+    margin: 0 auto;
 
     &.active{
         -webkit-transform: translate3d(0,0,0);

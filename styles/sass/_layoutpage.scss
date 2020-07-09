@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixin";
 
-// hero section with image 
+hero section with image 
 .hero{
     overflow-x: hidden !important;
 }
@@ -30,6 +30,9 @@ content: '';
 }
 .wrapper-flex {
     margin: 100px auto 0 auto;
+}
+.hero-03 .hero-content {
+    margin: 0;
 }
   
 .hero-03 .personal-image img {

@@ -81,10 +81,17 @@ body {
   font-family: "Muli", sans-serif;
   font-weight: 300;
   background-color: #f1f3f6;
+  overflow-x: hidden;
 }
 
 .full-screen {
   height: 100vh;
+}
+
+.max-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 main#main {
@@ -110,6 +117,7 @@ main#main {
   -webkit-transition: opacity 0s ease .6s,-webkit-transform .6s ease .6s;
   transition: transform .6s ease .6s,opacity 0s ease .6s,-webkit-transform .6s ease .6s;
   padding-left: 80px;
+  margin: 0 auto;
 }
 
 #main > section.active {
@@ -366,6 +374,7 @@ a, button {
   font-weight: 600;
 }
 
+hero section with image
 .hero {
   overflow-x: hidden !important;
 }
@@ -415,6 +424,10 @@ a, button {
 
 .wrapper-flex {
   margin: 100px auto 0 auto;
+}
+
+.hero-03 .hero-content {
+  margin: 0;
 }
 
 .hero-03 .personal-image img {
@@ -706,6 +719,8 @@ a, button {
   }
   .hero-03 .hero-content {
     overflow-x: hidden;
+    padding: 0;
+    margin: 0 auto;
   }
   .arshia-dark .navbar-toggler span {
     color: #fafafa;
