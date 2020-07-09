@@ -441,7 +441,7 @@ a, button {
 .services .services-item {
   padding: 10px;
   margin-top: 30px;
-  background-color: #FFD4CA;
+  background-color: #7EBCE6;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
           box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
@@ -496,8 +496,11 @@ a, button {
 }
 
 .media-container {
-  border: 10px solid #FFD4CA;
-  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
 .blog .blog-item {
