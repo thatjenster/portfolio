@@ -58,6 +58,14 @@ function borderColor() {
         allDivs[i].style.borderLeftColor = "" + color + "";
     }
 }
+function loadImage() {
+    let image = document.images[26];
+    let downloadingImage = new Image();
+        downloadingImage.onload = function(){
+        image.src = this.src;   
+    };
+    downloadingImage.src = "./../assets/image/project1.gif";
+}
 
 // Form to submit to my email 
 function validateEmail(email) {
