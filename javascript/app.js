@@ -6,6 +6,7 @@ $(document).ready(function () {
     colorScheme();
     borderColor();
     smoothScroll();
+    loadImage();
     AOS.init();
 });
 
