@@ -59,7 +59,7 @@ function borderColor() {
     }
 }
 function loadImage() {
-    let image = document.images[26];
+    let image = document.images[14];
     let downloadingImage = new Image();
         downloadingImage.onload = function(){
         image.src = this.src;   
