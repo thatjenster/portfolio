@@ -8,6 +8,7 @@ body{
     background-color: map-get($map: $bg-colors, $key: bg-light);
     overflow-x: hidden;
 }
+
 .full-screen {
     height: 100vh;
 }
