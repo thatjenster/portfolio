@@ -69,11 +69,7 @@ function loadImage() {
 }
 
 // Form to submit to my email 
-function validateEmail(email) {
-    "use strict";
-    let re = /\S+@\S+\.\S+/;
-    return re.test(email);
-}
+
 function sendEmail() {
     if(!name){
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
