@@ -319,6 +319,7 @@ body {
   font-weight: 300;
   background-color: #f1f3f6;
   overflow-x: hidden;
+  overflow: scroll-y;
 }
 
 .full-screen {
@@ -544,9 +545,10 @@ a, button {
 .color-scheme {
   position: fixed;
   z-index: 999;
+  right: 0px;
   top: 85px;
   padding: .5rem .75rem;
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 1rem 0 0 1rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
