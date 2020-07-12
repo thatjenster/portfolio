@@ -321,10 +321,6 @@ body {
   overflow-x: hidden;
 }
 
-.full-screen {
-  height: 100vh;
-}
-
 .max-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -702,13 +698,6 @@ hero section with image
 .services .services-item i {
   display: inline-block;
   font-size: 2rem;
-}
-
-.services .services-item:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  -webkit-transition: 4s ease;
-  transition: 4s ease;
 }
 
 .services .services-content {
