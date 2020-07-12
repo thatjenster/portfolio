@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixin";
 
-hero section with image 
+// hero section with image 
 .hero{
     overflow-x: hidden !important;
 }
@@ -69,11 +69,6 @@ content: '';
         }
   }
   
-//   .services .services-item:hover {
-//     transform: rotateY(360deg);
-//     transition: 4s ease;
-//   }
-  
   .services .services-content {
     padding-left: 3rem;
   }
@@ -81,7 +76,6 @@ content: '';
 // project section 
 .wrapper {
     width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
