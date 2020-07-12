@@ -564,6 +564,11 @@ a, button {
   padding: 0;
 }
 
+.navbar-nav {
+  margin: 0;
+  padding: 7.5px 15px;
+}
+
 .social-box {
   position: fixed;
   left: 1.5rem;
