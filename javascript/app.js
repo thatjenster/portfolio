@@ -75,11 +75,6 @@ function validateEmail(email) {
     return re.test(email);
 }
 function sendEmail() {
-    let name     = $('#name').val();
-    let email    = $('#email').val();
-    let subject  = $('#subject').val();
-    let comments = $('#comments').val();
-
     if(!name){
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Name is  required');
@@ -95,34 +90,6 @@ function sendEmail() {
     }else if(!comments){
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Comments is  required');
-    }else {
-        $.ajax({
-            type: 'POST',
-            data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
-            beforeSend: function() {
-                $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
-            },
-            success: function(data) {
-                $('#submit-btn').html('Submit');
-                var myObj = JSON.parse(data);
-                if(myObj['status']=='Congratulation'){
-                    $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Error'){
-                    $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Warning'){
-                    $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }
-            },
-            error: function(xhr) {
-                $('#submit-btn').html('Submit');
-                $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
-            },
-        });
     }
 }
 
