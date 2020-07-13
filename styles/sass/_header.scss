@@ -2,30 +2,30 @@
 @import "mixin";
  
 //loading bar
-#overlayer {
-    position:fixed;
-    z-index:9999;
-    background:white;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.loader {
-    position: fixed;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    z-index:99999;
-    border: 4px solid map-get($map: $colors, $key: secondary-light);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 2s linear infinite;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+// #overlayer {
+//     position:fixed;
+//     z-index:9999;
+//     background:white;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+// .loader {
+//     position: fixed;
+//     top: calc(50% - 20px);
+//     left: calc(50% - 20px);
+//     z-index:99999;
+//     border: 4px solid map-get($map: $colors, $key: secondary-light);
+//     border-radius: 50%;
+//     width: 40px;
+//     height: 40px;
+//     animation: spin 2s linear infinite;
+// }
+// @keyframes spin {
+//     0% { transform: rotate(0deg); }
+//     100% { transform: rotate(360deg); }
+// }
 
 // sticky header
 .header {
