@@ -57,21 +57,78 @@ content: '';
 }
 
 // tool kit 
-.services .services-item {
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #ecbcfd;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
-        i {
-            display: inline-block;
-            font-size: 2rem;
+.flex-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolkit-item {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #000;
+    letter-spacing: 2px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    margin: 20px -5px;
+}
+.toolkit-icon {
+    display: flex;
+    font-size: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 70px;
+    margin-bottom: 10%;
+    &:hover {
+        animation: pulse 1s infinite;
+        animation-timing-function: linear; 
+    }
+        .html:hover {
+            color: #E44C25;
         }
-  }
-  
-  .services .services-content {
-    padding-left: 3rem;
-  }
+        .css3:hover {
+            color: #2795D3;
+        }
+        .sass:hover {
+            color: #CF649A;
+        }
+        .javascript:hover {
+            color: #F7DF1C;
+        }
+        .jquery:hover {
+            color: #106AB0;
+        }
+        .react:hover {
+            color: #61DBFB;
+        }
+        .firebase:hover {
+            fill: url(#firebase-gradient) orange;
+        }
+        .git:hover {
+            color: #E44C25;
+        }
+        .github:hover {
+            color: #6f42c1;
+        }
+        .nodejs:hover {
+            color: #00A86B;
+        }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);
+    100% { transform: scale(1); }
+}
+}
+
 
 // project section 
 .wrapper {
