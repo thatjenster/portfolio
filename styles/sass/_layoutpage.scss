@@ -58,10 +58,17 @@ content: '';
 
 // tool kit 
 .flex-wrap-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 .toolkit-item {
     font-weight: 400;
@@ -70,23 +77,22 @@ content: '';
     color: #000;
     letter-spacing: 2px;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 20%;
-    height: 50%;
-    margin: 20px -5px;
+    padding: 5px;
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    padding: 0 20px;
+    
+}
+.wrapped {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+.svg-icon {
+    font-size: 4.5rem;
 }
 .toolkit-icon {
-    display: flex;
-    font-size: 6rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 70px;
-    margin-bottom: 10%;
+    font-size: 4.5rem;
     &:hover {
         animation: pulse 1s infinite;
         animation-timing-function: linear; 
