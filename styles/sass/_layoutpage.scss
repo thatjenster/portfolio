@@ -109,7 +109,8 @@ content: '';
         .javascript:hover {
             color: #F7DF1C;
         }
-        .jquery:hover {
+        .jquery:hover,
+        .typescript:hover {
             color: #106AB0;
         }
         .react:hover {
@@ -126,6 +127,9 @@ content: '';
         }
         .nodejs:hover {
             color: #00A86B;
+        }
+        .bootstrap:hover {
+            color: #9400D3;
         }
 }
 @keyframes pulse {
