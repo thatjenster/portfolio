@@ -757,7 +757,8 @@ a, button {
   color: #F7DF1C;
 }
 
-.toolkit-icon .jquery:hover {
+.toolkit-icon .jquery:hover,
+.toolkit-icon .typescript:hover {
   color: #106AB0;
 }
 
@@ -779,6 +780,10 @@ a, button {
 
 .toolkit-icon .nodejs:hover {
   color: #00A86B;
+}
+
+.toolkit-icon .bootstrap:hover {
+  color: #9400D3;
 }
 
 @-webkit-keyframes pulse {
