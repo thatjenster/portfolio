@@ -623,45 +623,6 @@ a, button {
   overflow-x: hidden !important;
 }
 
-.sakura {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background-image: url("http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png"), url("http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png");
-  -webkit-animation: sakura 15s linear infinite;
-          animation: sakura 15s linear infinite;
-}
-
-@-webkit-keyframes sakura {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
-
-@keyframes sakura {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
-
 .hero-03 {
   overflow-x: hidden !important;
 }
@@ -855,12 +816,16 @@ a, button {
 }
 
 .media-container {
-  padding: 30px;
+  padding: 15px;
   background-color: #342E37;
   box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
   -moz-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
   -webkit-box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
-  border: 15px solid #ecbcfd;
+  border: 10px solid #ecbcfd;
+}
+
+.media-container img {
+  width: 100%;
 }
 
 .blog .blog-item {
