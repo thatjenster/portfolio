@@ -747,6 +747,10 @@ a, button {
   color: #9400D3;
 }
 
+.toolkit-icon .wordpress:hover {
+  color: #00749C;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -815,6 +819,11 @@ a, button {
   margin-bottom: 40px;
 }
 
+.project-info .project-info,
+.media-container .project-info {
+  width: 50%;
+}
+
 .media-container {
   padding: 15px;
   background-color: #342E37;
@@ -822,10 +831,14 @@ a, button {
   -moz-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
   -webkit-box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
   border: 10px solid #ecbcfd;
+  width: 50%;
 }
 
 .media-container img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog .blog-item {
